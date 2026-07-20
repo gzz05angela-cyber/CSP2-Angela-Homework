@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">PHASE 2 · LESSON 1</p>
+    <h1>Task Tracker</h1>
+    <p>A static preview: the tasks below are written directly in this HTML file.</p>
+    <a href="#tasks-heading">Skip to today’s tasks</a>
+  </header>
+
+  <main>
+    <section class="panel" aria-labelledby="add-heading">
+      <h2 id="add-heading">Add a task</h2>
+      <form action="" method="get">
+        <label for="title">Task title</label>
+        <input id="title" name="title" type="text" maxlength="120">
+        <button type="submit">Add task</button>
+      </form>
+      <p class="note">The browser can submit this form, but no Java server processes or stores it yet.</p>
+    </section>
+
+    <section aria-labelledby="tasks-heading">
+      <h2 id="tasks-heading">Today’s tasks</h2>
+      <ul class="tasks">
+        <li class="task-card">
+          <div>
+            <p class="category">Home</p>
+            <h3>Buy groceries</h3>
+            <p>Not completed</p>
+          </div>
+          <button type="button" aria-label="Mark Buy groceries complete">Complete</button>
+        </li>
+        <li class="task-card completed">
+          <div>
+            <p class="category">School</p>
+            <h3>Finish reading assignment</h3>
+            <p>Completed</p>
+          </div>
+          <button type="button" aria-label="Reopen Finish reading assignment">Reopen</button>
+        </li>
+        <!--New Task Here-->
+        <li class="task-card">
+          <div>
+            <p class="category">School</p>
+            <h3>Preview Chemistry class</h3>
+            <p>Not completed</p>
+          </div>
+          <button type="button" aria-label="Mark Preview Chemistry class complete">Complete</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with HTML and CSS. Java arrives in Lesson 2.</p>
+  </footer>
+</body>
+</html>

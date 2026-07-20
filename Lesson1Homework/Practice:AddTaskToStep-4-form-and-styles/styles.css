@@ -1,0 +1,38 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  color: #17211b;
+  background: #f4f0e8;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+.site-header,
+main,
+footer {
+  width: min(760px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.site-header { padding: 48px 0 24px; }
+.eyebrow { color: #9a4528; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; }
+h1 { margin: 8px 0; font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 0.95; }
+h2, h3, p { margin-top: 0; }
+.panel { margin: 24px 0 40px; padding: 20px; border: 1px solid #cbbfaf; background: #fffaf2; }
+form { display: flex; gap: 10px; align-items: end; flex-wrap: wrap; }
+label { flex: 1 1 260px; font-weight: 700; }
+input { display: block; width: 100%; margin-top: 6px; padding: 10px; font: inherit; }
+button { padding: 11px 16px; border: 0; background: #9a4528; color: white; font-weight: 700; cursor: pointer; }
+.note { margin: 12px 0 0; color: #59645d; font-size: 0.9rem; }
+.tasks { padding: 0; list-style: none; }
+.task-card { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-top: 1px solid #cbbfaf; }
+.task-card h3 { margin-bottom: 6px; }
+.category { margin-bottom: 4px; color: #9a4528; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; }
+.completed h3 { color: #687169; text-decoration: line-through; }
+footer { padding: 32px 0 48px; color: #59645d; }
+
+@media (max-width: 520px) {
+  .task-card { align-items: flex-start; flex-direction: column; }
+}

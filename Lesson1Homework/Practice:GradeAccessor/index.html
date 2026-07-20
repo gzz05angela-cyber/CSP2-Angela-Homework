@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <title>Grade Accessor</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <header class = "site-header">
+        <p class = "eyebrow">IB Grade Translator and Collector</p>
+        <h1>Grade Accessor</h1>
+        <p>This link gives you percentage line for each IB grade level and collects them below in a list</p>
+        <a href = "#percentage-line">Skip to percentage line table</a>
+        <br>
+        <a href = "#grade-list">Skip to your grade list</a>
+    </header>
+
+    <main>
+        <section aria-labelledby="percentage-line">
+            <table width="100%" style="border-collapse: collapse; text-align: center; border: 1px solid #000;">
+                <caption style="font-weight: bold; font-size: 1.2em; margin-bottom: 8px;">Percentage line</caption>
+                <thead>
+                <tr>
+                    <th scope="col" style="border: 1px solid #000; padding: 8px;"></th>
+                    <th scope="col" style="border: 1px solid #000; padding: 8px;">7</th>
+                    <th scope="col" style="border: 1px solid #000; padding: 8px;">6</th>
+                    <th scope="col" style="border: 1px solid #000; padding: 8px;">5</th>
+                    <th scope="col" style="border: 1px solid #000; padding: 8px;">4</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row" style="border: 1px solid #000; padding: 8px;">EBHL</th>
+                    <td style="border: 1px solid #000; padding: 8px;">90%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">80%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">70%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">60%</td>
+                </tr>
+                <tr>
+                    <th scope="row" style="border: 1px solid #000; padding: 8px;">LLSL</th>
+                    <td style="border: 1px solid #000; padding: 8px;">85%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">78%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">65%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">55%</td>
+                </tr>
+                <tr>
+                    <th scope="row" style="border: 1px solid #000; padding: 8px;">ECONHL</th>
+                    <td style="border: 1px solid #000; padding: 8px;">75%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">68%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">59%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">40%</td>
+                </tr>
+                <tr>
+                    <th scope="row" style="border: 1px solid #000; padding: 8px;">MAAHL</th>
+                    <td style="border: 1px solid #000; padding: 8px;">87%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">77%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">67%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">57%</td>
+                </tr>
+                <tr>
+                    <th scope="row" style="border: 1px solid #000; padding: 8px;">PHYSHL</th>
+                    <td style="border: 1px solid #000; padding: 8px;">86%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">75%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">69%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">58%</td>
+                </tr>
+                <tr>
+                    <th scope="row" style="border: 1px solid #000; padding: 8px;">CHEMSL</th>
+                    <td style="border: 1px solid #000; padding: 8px;">82%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">79%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">68%</td>
+                    <td style="border: 1px solid #000; padding: 8px;">59%</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class = "panel" aria-labelledby="add-grade">
+            <h2 id="add-grade">Add a grade for a subject</h2>
+            <form action="" method="get">
+                <table>
+                    <tr>
+                        <td><label for="subject">Subject</label></td>
+                        <td><input id="subject" name="subject" type="text" maxlength="120"></td>
+                        <td><button type="submit">Add subject</button></td>
+                    </tr>
+                    <tr>
+                        <td><label for="percentage">Percentage</label></td>
+                        <td><input id="percentage" name="percentage" type="number" maxlength="120"></td>
+                        <td><button type="submit">Add percentage</button></td>
+                    </tr>
+                    <tr>
+                        <td><label for="grade">Grade</label></td>
+                        <td><input id="grade" name="grade" type="number" maxlength="120"></td>
+                        <td><button type="submit">Add grade</button></td>
+                    </tr>
+                </table>
+            </form>
+            <p class="note">Enter subject with HL/SL</p>
+            <p class="note">Enter percentage</p>
+            <p class="note">Enter grade from 1 to 7</p>
+
+        </section>
+
+        <section aria-labelledby="grade-list">
+            <h2 id="grade-list">Grade List</h2>
+            <ul class="grades">
+                <li class="subject-grade">
+                    <div>
+                        <h3>EBHL</h3>
+                        <p>Percentage: 97%</p>
+                        <p>IB Grade: 7</p>
+                    </div>
+                </li>
+                <li class="subject-grade">
+                    <div>
+                        <h3>LLSL</h3>
+                        <p>Percentage: 80%</p>
+                        <p>IB Grade: 6</p>
+                    </div>
+                </li>
+                <li class="subject-grade">
+                    <div>
+                        <h3>ECONHL</h3>
+                        <p>Percentage: 76%</p>
+                        <p>IB Grade: 7</p>
+                    </div>
+                </li>
+                <li class="subject-grade">
+                    <div>
+                        <h3>MAAHL</h3>
+                        <p>Percentage: 90%</p>
+                        <p>IB Grade: 7</p>
+                    </div>
+                </li>
+                <li class="subject-grade">
+                    <div>
+                        <h3>PHYSHL</h3>
+                        <p>Percentage: 87%</p>
+                        <p>IB Grade: 7</p>
+                    </div>
+                </li>
+                <li class="subject-grade">
+                    <div>
+                        <h3>CHEMSL</h3>
+                        <p>Percentage: 83%</p>
+                        <p>IB Grade: 7</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Fixed grade accessor</p>
+    </footer>
+</body>
+</html>
