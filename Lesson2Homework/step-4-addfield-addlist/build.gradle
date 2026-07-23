@@ -1,0 +1,16 @@
+plugins { id 'application' }
+
+repositories { mavenCentral() }
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+application { mainClass = 'course.tasktracker.TaskApplication' }
+
+tasks.register('smokeTest', JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'course.tasktracker.TaskApplicationSmokeTest'
+    dependsOn testClasses
+}
